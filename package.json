@@ -7,5 +7,6 @@
   "repository": "https://github.com/shresthaoshan/parseTimeSince.git",
   "author": "Oshan Shrestha",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "keywords": ["parse", "time", "elapsed", "since"]
 }
