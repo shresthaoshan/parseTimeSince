@@ -1,6 +1,6 @@
 {
   "name": "parsetimesince",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An npm package to parse time that has passes since a specific point to now in minutes/hours/days/months/year.",
   "main": "index.js",
   "homepage": "https://shresthaoshan.github.io/parseTimeSince/",
@@ -11,7 +11,9 @@
   "author": "Oshan Shrestha",
   "license": "MIT",
   "private": false,
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [
     "parse",
     "time",
