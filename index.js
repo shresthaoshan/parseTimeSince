@@ -1,4 +1,4 @@
-module.exports = parseSince => {
+const parseTimeSince = parseSince => {
     if (typeof parseSince == 'object') {
         console.error('Parameter should not be an object but an integer.')
         return null
@@ -13,3 +13,5 @@ module.exports = parseSince => {
     }
     return (new (require('./services/ParseElapsed'))).compute(parseSince)
 }
+
+module.exports = parseTimeSince
