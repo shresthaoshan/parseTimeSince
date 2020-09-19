@@ -12,8 +12,7 @@ class Parser {
     parse = (t, controller = 0) => {
         if (!t) return "Just now"
         let { presets } = this, { name, threshold } = presets[controller]
-        if (Math.floor(t) == 1) return `${Math.floor(t)} ${name} ago`
-        if (t < threshold) return `${Math.floor(t)} ${name}s ago`
+        if (t < threshold) return `${Math.floor(t)} ${name}${Math.floor(t) == 1 ? '' : 's'} ago`
         return this.parse(t/threshold, controller+1)
     }
 }
